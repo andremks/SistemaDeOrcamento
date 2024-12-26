@@ -1,0 +1,94 @@
+/*
+  Google Font - Afacad Flux
+*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+
+:root {
+  --pri: #d6d206;
+  --sec: #1b1b1b;
+  --light: #F2F6FF;
+  --preco: #08e765;
+  --limpar: #ff0040;
+}
+
+
+
+
+
+body {
+  background-color: var(--sec);
+  color: var(--light);
+  font-family: "Afacad Flux", serif;
+}
+
+.cor-pri {
+  color: var(--pri);
+}
+.cor-sec{
+  color: var(--sec);
+}
+.cor-light{
+  color: var(--light);
+}
+.cor-preco{
+  color: var(--preco);
+}
+.cor-limpar{
+  color: var(--limpar);
+}
+
+
+
+
+
+
+.resultado {
+  color: var(--preco);
+}
+
+.cupom,
+.limpar,
+.calcularBtn {
+  font-weight: bold;
+  padding: 16px;
+  border: 0;
+}
+
+.limpar {
+  background-color: var(--limpar);
+}
+
+.calcularBtn {
+  background-color: var(--preco);
+}
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: var(--pri);
+}
+
+
+
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sec);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pri);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light);
+}

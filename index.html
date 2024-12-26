@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="main.css">
+    <title>Orçamento de Materiais de Construção</title>
+
+</head>
+
+<body>
+
+
+    <h1 class="cor-pri">Orçamento de Materiais de Construção</h1>
+    <h3>Planeje Sua Obra com Economia!</h3>
+
+    <br>
+    <form id="orcamentoForm">
+        <label><input type="checkbox" name="material" value="35.00"> Cimento - R$ 35,00</label><br><br>
+        <label><input type="checkbox" name="material" value="50.00"> Areia - R$ 50,00</label><br><br>
+        <label><input type="checkbox" name="material" value="45.00"> Brita - R$ 45,00</label><br><br>
+        <label><input type="checkbox" name="material" value="1.50"> Tijolos e Blocos - R$ 1,50 (unidade)</label><br><br>
+        <label><input type="checkbox" name="material" value="10.00"> Telhas - R$ 10,00 (unidade)</label><br><br>
+        <label><input type="checkbox" name="material" value="25.00"> Vergalhões de Aço - R$ 25,00
+            (barra)</label><br><br>
+        <label><input type="checkbox" name="material" value="70.00"> Madeiras - R$ 70,00 (m²)</label><br><br>
+        <label><input type="checkbox" name="material" value="15.00"> Tubos e Conexões - R$ 15,00
+            (unidade)</label><br><br>
+        <label><input type="checkbox" name="material" value="30.00"> Argamassa - R$ 30,00 (saco 20kg)</label><br><br>
+        <label><input type="checkbox" name="material" value="90.00"> Tintas e Vernizes - R$ 90,00 (lata)</label><br><br>
+    </form>
+
+    <br>
+    <label for="cupom">Cupom de 10% de desconto: <strong class="cor-pri">MATERIAL10</strong> <br></label>
+    <input type="text" id="cupom" class="cupom" placeholder="Digite o cupom">
+    <br><br>
+
+    <button type="button" id="limparBtn" class="limpar">X Limpar</button>
+    <button type="button" id="calcularBtn" class="calcularBtn">$$ Calcular Orçamento</button>
+    <br><br>
+    <h2 id="resultado" class="resultado">Total: R$ 0,00</h2>
+    <h5 id="desconto">Desconto: R$ 0,00</h5>
+
+
+    <br>
+    <footer>
+        <p id="ano">Todos os Direitos Reservados</p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').innerHTML = '© ' + new Date().getFullYear() + ' André | Todos os Direitos Reservados';
+    </script>
+
+    <script src="calcule.js"></script>
+</body>
+
+</html>
